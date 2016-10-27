@@ -10,6 +10,24 @@ namespace RecursionExample
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine(Fact(2));
+
         }
+
+
+        static int Fact(int x)
+        {
+            if (x == 1)
+            
+                return 1;
+            int output = x * Fact(x - 1);
+            Console.WriteLine(output);
+            
+                return x * Fact(x - 1);
+
+        }
+
+
     }
 }
